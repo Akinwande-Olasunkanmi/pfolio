@@ -584,4 +584,15 @@ img{
     .about_social{
         margin-top: 1.5rem;
     }
+    .home_scroll{
+        align-self: flex-end;
+        padding-bottom: var(--mb-4);
+    }
+    .home_scroll-link{
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+        color: var(--white-color);
+        margin-top: 8rem;
+        margin-left: 1rem;
+    }
 }
