@@ -587,12 +587,19 @@ img{
     .home_scroll{
         align-self: flex-end;
         padding-bottom: var(--mb-4);
+        margin-left: .5rem;
     }
     .home_scroll-link{
         writing-mode: vertical-lr;
         transform: rotate(-180deg);
         color: var(--white-color);
         margin-top: 8rem;
-        margin-left: 1rem;
     }
+
+  
+    .up{
+        font-size: 3rem;
+        margin-left: 6rem;
+    }
+
 }
