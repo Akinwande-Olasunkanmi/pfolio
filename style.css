@@ -572,7 +572,8 @@ img{
         font-size: 1rem;
     }
     .footer_social{
-        margin-left: 1rem;
+        margin-left: .6rem;
+        font-size: 2rem;
     }
    
     .footer_data a .footer_social:hover{
@@ -599,7 +600,7 @@ img{
   
     .up{
         font-size: 3rem;
-        margin-left: 6rem;
+        margin-left: 5.8rem;
     }
 
 }
