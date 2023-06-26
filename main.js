@@ -41,6 +41,35 @@ function scrollActive(){
     })
 }
 
+// email
+function sendMail(){
+ 
+    
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceId = "service_aojz8wu";
+    const templateId = "template_lpymugh"
+
+    if (name.value === '' || email.value === '' || message.value === ''){
+        alert('Please fill in all the fields.');
+    } else {
+        emailjs.send(serviceId,templateId,params).then(res => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+
+            console.log(res);
+            console.log(openPopup());
+        })
+       
+        .catch((err) => console.log(err));
+    }
+};
+
 // scroll reveal animation
 const sr = ScrollReveal({
     origin: 'top',

@@ -9,27 +9,40 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- email script -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("SlnycnbumsXiqK11M");
+    })();
+    </script>
 </head>
 <body>
     <!-- header -->
     <header class="l-header">
         <nav class="nav bg-grid">
             <div>
-                <a href="#" class="nav_logo">Olasunkanmi</a>
+                <a href="#" class="nav_logo text-decoration-none">OLASUNKANMI</a>
             </div>
 
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-                    <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-                    <li class="nav_item"><a href="#portfolio" class="nav_link">Portfolio</a></li>
-                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                    <li class="nav_item"><a href="#home" class="nav_link text-decoration-none active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link text-decoration-none">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link text-decoration-none">Skills</a></li>
+                    <li class="nav_item"><a href="#portfolio" class="nav_link text-decoration-none">Portfolio</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link text-decoration-none">Contact</a></li>
                 </ul>
             </div>
 
@@ -46,7 +59,7 @@
                 <h1 class="home_title"><span>WEL</span><br>COME.</h1>
                 
                 <div class="home_scroll">
-                    <a href="#about" class="home_scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll Down</a>
+                    <a href="#about" class="home_scroll-link text-decoration-none"><i class='bx bx-up-arrow-alt'></i>Scroll Down</a>
                 </div>
 
                 <img src="/img/IMG_20230205_073742_040-removebg-preview.png" alt="" class="home_img">
@@ -111,42 +124,42 @@
                     <img src="/img/ideal.png" alt="">
 
                     <div class="portfolio_link">
-                        <a href="http://idealprimary.netlify.app" target="_blank" class="portfolio_link-name">View Details</a>
+                        <a href="http://idealprimary.netlify.app" target="_blank" class="portfolio_link-name text-decoration-none">View Details</a>
                     </div>
                 </div>
                 <div class="portfolio_img">
                     <img src="/img/abcd.png" alt="">
 
                     <div class="portfolio_link">
-                        <a href="http://abcdinstitute.netlify.app" target="_blank" class="portfolio_link-name">View Details</a>
+                        <a href="http://abcdinstitute.netlify.app" target="_blank" class="portfolio_link-name text-decoration-none">View Details</a>
                     </div>
                 </div>
                 <div class="portfolio_img">
                     <img src="/img/quiz.png" alt="">
 
                     <div class="portfolio_link">
-                        <a href="http://myquickquizapp.netlify.app" target="_blank" class="portfolio_link-name">View Details</a>
+                        <a href="http://myquickquizapp.netlify.app" target="_blank" class="portfolio_link-name text-decoration-none">View Details</a>
                     </div>
                 </div>
                 <div class="portfolio_img">
                     <img src="/img/tic tac toe.png" alt="">
 
                     <div class="portfolio_link">
-                        <a href="http://mytttgame.netlify.app" target="_blank" class="portfolio_link-name">View Details</a>
+                        <a href="http://mytttgame.netlify.app" target="_blank" class="portfolio_link-name text-decoration-none">View Details</a>
                     </div>
                 </div>
                 <div class="portfolio_img">
                     <img src="/img/adunni.png" alt="">
 
                     <div class="portfolio_link">
-                        <a href="http://adunnicollections.netlify.app" target="_blank" class="portfolio_link-name">View Details</a>
+                        <a href="http://adunnicollections.netlify.app" target="_blank" class="portfolio_link-name text-decoration-none">View Details</a>
                     </div>
                 </div>
                 <div class="portfolio_img">
                     <img src="/img/weather.png" alt="">
 
                     <div class="portfolio_link">
-                        <a href="http://openmyweatherapp.netlify.app" target="_blank" class="portfolio_link-name">View Details</a>
+                        <a href="http://openmyweatherapp.netlify.app" target="_blank" class="portfolio_link-name text-decoration-none">View Details</a>
                     </div>
                 </div>
             </div>
@@ -170,14 +183,13 @@
 
                 <form action="" class="contact_form">
                     <div class="contact_inputs">
-                        <input type="text" placeholder="Enter Your Name" class="contact_input" required>
-                        <input type="mail" placeholder="Enter Your Email" class="contact_input" required>
-                        <input type="number" placeholder="Enter Your Phone Number" class="contact_input" required>
+                        <input type="text" placeholder="Enter Your Name" id="name" class="contact_input" required>
+                        <input type="mail" placeholder="Enter Your Email" id="email" class="contact_input" required>
                     </div>
 
-                    <textarea name="" placeholder="Your Message" id="" cols="" rows="10" class="contact_input" required></textarea>
+                    <textarea name="" placeholder="Your Message" id="message" cols="" rows="10" class="contact_input" required></textarea>
 
-                    <input type="submit" value="SEND" class="contact_button">
+                    <input type="submit" value="SEND" onclick="sendMail()" class="contact_button">
                 </form>
             </div>
         </section>
@@ -188,36 +200,61 @@
         <div class="footer_container bg-grid">
             <div class="footer_data">
                 <h2 class="footer_title">AKINWANDE OLASUNKANMI</h2>
-                <p class="footer_text">I'm Akinwande Olasunkanmi and this is my portfolio website</p>
+                <p class="footer_text text-white">I'm Akinwande Olasunkanmi and this is my portfolio website</p>
             </div>
 
             <div class="footer_data">
                 <h2 class="footer_title">EXPLORE</h2>
-                <ul>
-                    <li><a href="#home" class="footer_link">Home</a></li>
-                    <li><a href="#about" class="footer_link">About</a></li>
-                    <li><a href="#skills" class="footer_link">Skills</a></li>
-                    <li><a href="#portfolio" class="footer_link">Portfolio</a></li>
-                    <li><a href="#contact" class="footer_link">Contact</a></li>
+                <ul class="mx-auto">
+                    <li><a href="#home" class="footer_link text-white text-decoration-none">Home</a></li>
+                    <li><a href="#about" class="footer_link text-white text-decoration-none">About</a></li>
+                    <li><a href="#skills" class="footer_link text-white text-decoration-none">Skills</a></li>
+                    <li><a href="#portfolio" class="footer_link text-white text-decoration-none">Portfolio</a></li>
+                    <li><a href="#contact" class="footer_link text-white text-decoration-none">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer_data">
                 <h2 class="footer_title">FOLLOW</h2>
-                <a href="https://www.facebook.com/akinwande-olasunkanmi-abioye" target="_blank" class="footer_social"><i class='bx bxl-facebook'></i></a>
-                <a href="http://www.instagram.com/el_frosh_lee1" target="_blank" class="footer_social"><i class='bx bxl-instagram'></i></a>
-                <a href="#" class="footer_social"><i class='bx bxl-twitter'></i></a>
-                <a href="https://wa.me/2347069517783?text=Hello, I checked your portfolio. I have a job for you" target="_blank" class="footer_social"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.facebook.com/akinwande-olasunkanmi-abioye" target="_blank" class="footer_social text-decoration-none"><i class='bx bxl-facebook'></i></a>
+                <a href="http://www.instagram.com/el_frosh_lee1" target="_blank" class="footer_social text-decoration-none"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer_social text-decoration-none"><i class='bx bxl-twitter'></i></a>
+                <a href="https://wa.me/2347069517783?text=Hello, I checked your portfolio. I have a job for you" target="_blank" class="footer_social text-decoration-none"><i class='bx bxl-whatsapp'></i></a>
 
-                <a href="#home" class="up"><i class="bi bi-arrow-up-circle"></i></a>
+                <a href="#home" class="up text-decoration-none"><i class="bi bi-arrow-up-circle"></i></a>
             </div>
 
            
         </div>
     </footer>
 
+    <!-- popup -->
+    <div class="container_pop">
+        <div class="popup" id="popup">
+            <img src="/img/mark.png" alt="">
+            <h2>Thank You !</h2>
+            <p class="fw-bold">Your message has been sent successfully</p>
+            <button type="button" class="bg-primary" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script>
+    let popup = document.getElementById("popup");
+    
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    
+    function closePopup(){
+        popup.classList.remove("open-popup")
+    }
+    </script>
+
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <!-- js -->
     <script src="/main.js"></script>
