@@ -760,7 +760,10 @@ img{
     *{
         box-sizing: border-box;
     }
-
+    .nav {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
     .nav_menu {
         position: fixed;
         top: var(--header-height);
@@ -807,7 +810,9 @@ img{
     }
     .show {
         right: 0;
-        height: 80vh;
+        top: 8%;
+        height: 50vh;
+        width: 50%;
     }
     .show .nav_list{
         height: 60vh;
@@ -817,8 +822,15 @@ img{
     }
     .nav_item {
         margin-bottom: var(--mb-4);
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: bold;
+        text-align: center;
+    }
+    .nav_logo{
+        font-size: 1.5rem;
+    }
+    .nav_toggle i{
+        font-size: 2rem;
     }
     .nav_item a{
         color: var(--first-color);
@@ -831,6 +843,9 @@ img{
     .about_text {
         margin-bottom: var(--mb-4);
         margin: 0 1rem;
+    }
+    .about_social{
+        margin-top: 1rem;
     }
     .section-title::after {
         position: absolute;
@@ -903,9 +918,11 @@ img{
     .footer_text{
         margin-left: 2rem;
         font-size: 1.2rem;
+        color: #6d6a6a;
     }
     .footer_data ul li .footer_link{
         font-size: 1.2rem;
+        color: #6d6a6a;
     }
     .footer_data a i{
         margin-left: 2rem;
@@ -930,9 +947,7 @@ img{
         color: #333;
         visibility: hidden;
         transition: transform 0.4s, top 0.4s;
-    }
-    
-    
+    } 
     .popup img{
         width: 100px;
         position: absolute;
