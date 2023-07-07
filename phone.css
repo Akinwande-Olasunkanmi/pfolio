@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .home {
-    height: 90vh;
+    height: 95vh;
     position: relative;
     background-color: var(--first-color);
     overflow: hidden;
@@ -69,14 +69,14 @@ a.nav_link{
     position: absolute;
     left: 10%;
     top: 10%;
-    padding-top: 7rem;
-    font-size: 6rem;
+    padding-top: 4rem;
+    font-size: 5rem;
 }
 img.home_img{
     position: absolute;
     left: 20%;
     bottom: 0;
-    width: 500px;
+    width: 300px;
 }
 .section-title::after {
     position: absolute;
@@ -104,8 +104,8 @@ img.home_img{
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     color: var(--white-color);
-    margin-top: 35rem;
-    font-size: 1.5rem;
+    margin-top: 23rem;
+    font-size: 1.2rem;
 }
 h3.skills_subtitle{
     margin-left: 3rem;
@@ -187,15 +187,17 @@ a.up i:hover{
 }
 .open-popup{
     visibility: visible;
-    top: 300%;
+    top: 810%;
+    width: 93%;
     transform: translate(-50%,-50%) scale(1);
+    border: 2px solid var(--first-color);
 }
 
 .popup img{
     position: absolute;
-    left: 35%;
-    top: -5%;
-    width: 100px;
+    left: 38%;
+    top: -1%;
+    width: 80px;
     margin-top: -50px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
