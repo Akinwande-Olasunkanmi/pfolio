@@ -26,14 +26,6 @@
     --small-font-size: .813rem;
 }
 
-@media screen and (min-width: 768px){
-    :root{
-        --big-font-size: 10.5rem;
-        --h2-font-size: 2rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-    }
-}
 
 /* margins */
 :root{
@@ -148,6 +140,9 @@ img{
     color: var(--white-color);
     font-weight: bold;
     margin-left: 2rem;
+}
+.nav_list{
+    display: flex;
 }
 .nav_toggle{
     color: var(--white-color);
@@ -268,6 +263,7 @@ img{
 .skills_name:hover{
     background-color: var(--first-color);
     color: var(--white-color);
+    cursor: pointer;
 }
 .skills_img img{
     border-radius: .5rem;
@@ -363,11 +359,11 @@ img{
     justify-content: center;
 } */
 .popup{
-    width: 800px;
+    width: 400px;
     background: #fff;
     border-radius: 6px;
     position: absolute;
-    top: 1450%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0.1);
     text-align: center;
@@ -378,8 +374,9 @@ img{
 }
 
 .open-popup{
-    visibility: visible;
-    top: 100%;
+    visibility: hidden;
+    top: 50%;
+    width: 50%;
     transform: translate(-50%,-50%) scale(1);
 }
 

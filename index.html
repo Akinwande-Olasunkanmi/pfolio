@@ -9,9 +9,11 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" media="screen and (min-width:361px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="tablet.css">
 
     <link rel="stylesheet" media="screen and (max-width:360px)" href="phone.css">
+
+    <link rel="stylesheet" media="screen and (min-width:361px)" href="phones.css">
 
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -79,7 +81,7 @@
                     <img src="/img/IMG_20230205_073742_040-removebg-preview.png" alt="">
                 </div>
 
-                <div>
+                <div class="long_text">
                     <h2 class="about_subtitle">I'm Akinwande Olasunkanmi</h2>
                     <span class="about_profession">Web Developer</span>
                     <p class="about_text">Akinwande Olasunkanmi is a full-stack web developer with depth knowledge in Html,Css,Javascript,Php,Python and frameworks like React,Vue,Django. Am good at what I do and simply the best,this portfolio show off some of my project work.</p>
@@ -191,7 +193,7 @@
                         <input type="mail" placeholder="Enter Your Email" id="email" class="contact_input" required>
                     </div>
 
-                    <textarea name="" placeholder="Your Message" id="message" cols="" rows="10" class="contact_input" required></textarea>
+                    <textarea name="" placeholder="Enter Your Message" id="message" cols="" rows="10" class="contact_input" required></textarea>
 
                     <input type="submit" href="#contact" value="SEND" onclick="sendMail()" class="contact_button">
                 </form>

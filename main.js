@@ -64,6 +64,7 @@ function sendMail(){
 
             console.log(res);
             console.log(openPopup());
+            alert('Message sent successfully !!!');
         })
        
         .catch((err) => console.log(err));
@@ -80,7 +81,7 @@ const sr = ScrollReveal({
 
 // scroll home
 sr.reveal('.home_title', {})
-sr.reveal('.home_scroll', {delay: 2000})
+sr.reveal('.home_scroll', {delay: 1000})
 sr.reveal('.home_img', {origin: 'right', delay: 400})
 
 // scroll about
