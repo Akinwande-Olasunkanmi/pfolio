@@ -17,7 +17,7 @@
     --text-color: #697477;
 }
 
-/* fuente y */
+/* fonts */
 :root{
     --body-font: 'Montserrat', sans-serif;
     --big-font-size: 6.25rem;
@@ -150,6 +150,12 @@ img{
     cursor: pointer;
 }
 
+/* dark mode */
+#moon_icon{
+    width: 30px;
+    cursor: pointer;
+}
+
 /* show menu */
 .show{
     right: 0;
@@ -241,6 +247,24 @@ img{
 }
 .about_social-icon:hover{
     color: var(--first-color);
+}
+
+#about a{
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 500;
+}
+#about a:hover{
+    color: var(--white-color);
+}
+.btn{
+    border: 1px solid var(--first-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: calc(50% - 60px);
+}
+.btn:hover{
+    background-color: var(--first-color);
 }
 
 /* skills */
