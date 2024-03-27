@@ -249,22 +249,17 @@ img{
     color: var(--first-color);
 }
 
-#about a{
+#cv{
     color: var(--first-color);
     font-weight: bold;
     font-size: 500;
-}
-#about a:hover{
-    color: var(--white-color);
-}
-.btn{
-    border: 1px solid var(--first-color);
-    border-radius: 10px;
-    padding: 10px;
+    border: 2px solid var(--first-color);
+    margin-top: 10px;
     margin-left: calc(50% - 60px);
 }
-.btn:hover{
+#cv:hover{
     background-color: var(--first-color);
+    color: var(--white-color);
 }
 
 /* skills */
